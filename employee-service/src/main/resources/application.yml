@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: employee
+
+  jpa:
+    hibernate:
+      ddl-auto: create
