@@ -1,18 +1,19 @@
 package com.pasindu.emscloud.commons.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class Employee {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     Integer id;
     String firstName;
     String lastName;
     String idNumber;
     String address;
+
+    @Transient
+    Allocation[] allocations;
 
     public Integer getId() {
         return id;
@@ -52,5 +53,13 @@ public class Employee {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public Allocation[] getAllocations() {
+        return allocations;
+    }
+
+    public void setAllocations(Allocation[] allocations) {
+        this.allocations = allocations;
     }
 }

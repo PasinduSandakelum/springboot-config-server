@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.pasindu.emscloud</groupId>
-	<artifactId>employee-service</artifactId>
+	<artifactId>allocation-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>employee-service</name>
+	<name>allocation-service</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
